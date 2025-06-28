@@ -1,107 +1,98 @@
-<!DOCTYPE html>
-<html lang="pt">
+<!DOCTYPE html><html lang="pt">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MDS - Media Development Studio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #000000;
-      color: #FFD700;
+      background-color: #000;
+      color: white;
     }
     header {
       background-color: #111;
       padding: 20px;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
+    h1 {
+      color: #d4af37;
     }
-    section {
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .artist-card {
+      background-color: #111;
+      border: 1px solid #333;
+      border-radius: 8px;
+      max-width: 300px;
+      text-align: center;
       padding: 20px;
     }
-    .gallery img {
+    .artist-card img {
       width: 100%;
-      max-width: 300px;
-      margin: 10px;
+      border-radius: 8px;
     }
-    .social-links a {
-      color: #FFD700;
-      display: block;
-      margin: 5px 0;
+    .artist-card h2 {
+      color: #d4af37;
+      margin-top: 15px;
+    }
+    .artist-card p {
+      color: white;
+      font-size: 0.95em;
+      margin: 10px 0;
+    }
+    .artist-card a {
+      color: #d4af37;
+      text-decoration: none;
     }
     footer {
       background-color: #111;
       text-align: center;
-      padding: 10px;
-      color: #888;
-      font-size: 0.9em;
+      padding: 20px;
+      font-size: 0.85em;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>MDS - Media Development Studio</h1>
-    <p>Fundada por Domingos da Rosa Cabingano (Da'Rosa)</p>
-  </header>
-
-  <section>
-    <h2>Biografia</h2>
-    <p>A MDS - Media Development Studio é uma produtora angolana independente comprometida com a promoção e desenvolvimento artístico de talentos emergentes em Angola. Fundada por Domingos da Rosa Cabingano (Da'Rosa), a MDS representa artistas como Eduardo Comba, Zoe Oliveira, Líder Magno e Da'Rosa. Colaboradores: Lyo Tavares e Defest Genial.</p>
-  </section>
-
-  <section>
-    <h2>Artistas</h2>
-    <div class="gallery">
+    <p>Divulgando talentos, promovendo sonhos.</p>
+  </header>  <section class="gallery">
+    <div class="artist-card">
       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7BfaNRQR85YmzWevlxeUDkd8OZTKBsstsw_7yyi23DtuCUsFP0kzrgR-hv6NFXWIBlmx-J4v4rVTZKg6lpYX_SsidhkLuvsH7zwZ8gsWACVgYx-0ixAFO8c6gWPj05kfgMW1aon5J07mbaOSfKzORScpfIOM2KJrdT10ibmj4e_4z92lTyxOpzCh56WQ/s1600/IMG-20231129-WA0040(1).jpg" alt="Zoe Oliveira" />
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUzoOJ3Fpf3ZD22KeSAg9iYKxNuFBxgDlvLtmgSr61pNDfmGkijN_5ZtZ3Zh7xynaR0wXpNtL0q4iufF-4J_pcE_GSbUcodBRJs-eV9v6I19LcBcYrV298oKMfSejIHi_1yZIEAvGRl6k5Do2k8K4_Qx0GbMbBibP0hlqIJuDAz8fpfab5rZGvUkg51Eg/s1600/IMG-20231129-WA0039.jpg" alt="Líder Magno" />
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfh2xJFLErT619qvSpgS37YEqJYM4EoYGGfzdBJUD82XgCPJXWIbsJpjopt78hQtVDlVM1bDp6buXQWLUG1w-rHTRMOsRisL5Z2U2NQ-8TaB0rHaV_1xe5YNMjBR3W8tJE4nCkFOvdXVTKML_0NCX3UyxlIZPAmGxJhzsu5xfi_17DHH_J0QK8abrP_FA/s1600/IMG-20231129-WA0029.jpg" alt="Eduardo Comba" />
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3aYWhRrlYgEHejsPgO4iiQ0uJxj3Nja2hFFIpz0v7MJq5ktNKwKoI44c_vegIHA57Bd4mJmOZnMXElYxbO2iuHA1cDBFCIDLqFQ_IgjQhFkV94XMtjGgXDMvmZ3haJrCtsnq3seZC8fd2z9TSPdJhZpM8BYn8mGysoUqeVmRKfco1l49K78KR_4mtQ1s/s3000/Design%20sem%20nome_20250610_010612_0000.jpg" alt="Da'Rosa & Lyo Tavares" />
-    </div>
-  </section>
+      <h2>Zoe Oliveira</h2>
+      <p>Cantora e compositora<br>Música: Até quando?<br>Ano do lançamento: 2023<br>Gênero: Zouk</p>
+      <p><a href="https://on.soundcloud.com/Wsz9Gy62PirvziUkRH" target="_blank">Ouvir no SoundCloud</a></p>
+    </div><div class="artist-card">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUzoOJ3Fpf3ZD22KeSAg9iYKxNuFBxgDlvLtmgSr61pNDfmGkijN_5ZtZ3Zh7xynaR0wXpNtL0q4iufF-4J_pcE_GSbUcodBRJs-eV9v6I19LcBcYrV298oKMfSejIHi_1yZIEAvGRl6k5Do2k8K4_Qx0GbMbBibP0hlqIJuDAz8fpfab5rZGvUkg51Eg/s1600/IMG-20231129-WA0039.jpg" alt="Líder Magno" />
+  <h2>Líder Magno</h2>
+  <p>Cantor e intérprete<br>Música: Ser bonito é pecado?<br>Ano do lançamento: 2023<br>Gênero: Kuduro</p>
+  <p><a href="https://on.soundcloud.com/lYDAFoPm64ixVagwY1" target="_blank">Ouvir no SoundCloud</a></p>
+</div>
 
-  <section>
-    <h2>Lançamentos Recentes</h2>
-    <ul>
-      <li>🎵 <strong>Ser Bonito é Pecado?</strong> - Líder Magno (Kuduro) <br /> <a href="https://on.soundcloud.com/lYDAFoPm64ixVagwY1">Ouvir no SoundCloud</a></li>
-      <li>🎵 <strong>Até Quando?</strong> - Zoe Oliveira (Zouk) <br /> <a href="https://on.soundcloud.com/Wsz9Gy62PirvziUkRH">Ouvir no SoundCloud</a></li>
-      <li>🎵 <strong>Nalingue Yo</strong> - Eduardo Comba ft: Zoe Oliveira (Zouk R&B) <br /> <a href="https://on.soundcloud.com/Ic8s0ndEtZZbsGn44C">Ouvir no SoundCloud</a></li>
-    </ul>
-  </section>
+<div class="artist-card">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfh2xJFLErT619qvSpgS37YEqJYM4EoYGGfzdBJUD82XgCPJXWIbsJpjopt78hQtVDlVM1bDp6buXQWLUG1w-rHTRMOsRisL5Z2U2NQ-8TaB0rHaV_1xe5YNMjBR3W8tJE4nCkFOvdXVTKML_0NCX3UyxlIZPAmGxJhzsu5xfi_17DHH_J0QK8abrP_FA/s1600/IMG-20231129-WA0029.jpg" alt="Eduardo Comba" />
+  <h2>Eduardo Comba ft. Zoe Oliveira</h2>
+  <p>Cantores e compositores<br>Música: Nalingue Yo<br>Ano do lançamento: 2023<br>Gênero: Zouk R&B</p>
+  <p><a href="https://on.soundcloud.com/Ic8s0ndEtZZbsGn44C" target="_blank">Ouvir no SoundCloud</a></p>
+</div>
 
-  <section>
-    <h2>Links Oficiais da MDS</h2>
-    <div class="social-links">
-      <a href="https://on.soundcloud.com/9TOOTl7czI1jvnkBC5">SoundCloud</a>
-      <a href="https://mds-mediadevelopmentstudio.bandcamp.com/">Bandcamp</a>
-      <a href="https://musicbrainz.org/label/ddfcdafa-4016-4af7-963f-bdc8cb5b96d0">MusicBrainz</a>
-      <a href="https://wa.me/244958030825">WhatsApp MDS</a>
-      <a href="https://github.com/mds-label">GitHub da MDS</a>
-    </div>
-  </section>
+<div class="artist-card">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3aYWhRrlYgEHejsPgO4iiQ0uJxj3Nja2hFFIpz0v7MJq5ktNKwKoI44c_vegIHA57Bd4mJmOZnMXElYxbO2iuHA1cDBFCIDLqFQ_IgjQhFkV94XMtjGgXDMvmZ3haJrCtsnq3seZC8fd2z9TSPdJhZpM8BYn8mGysoUqeVmRKfco1l49K78KR_4mtQ1s/s3000/Design%20sem%20nome_20250610_010612_0000.jpg" alt="Da'Rosa e Lyo Tavares" />
+  <h2>Da'Rosa & Lyo Tavares</h2>
+  <p>Colaboradores musicais<br>Ouvir no Banzelo Seguro</p>
+  <p><a href="https://banzelo.seguro/mds" target="_blank">Ouvir no Banzelo</a></p>
+</div>
 
-  <footer>
-    <p>&copy; 2025 MDS - Media Development Studio. Todos os direitos reservados.</p>
-    <script type='application/ld+json'>
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "MDS - Media Development Studio",
-        "url": "https://mds-label.github.io/mds-ao/",
-        "logo": "https://mds-label.github.io/mds-ao/logo.png",
-        "founder": "Domingos da Rosa Cabingano",
-        "sameAs": [
-          "https://on.soundcloud.com/9TOOTl7czI1jvnkBC5",
-          "https://mds-mediadevelopmentstudio.bandcamp.com/",
-          "https://musicbrainz.org/label/ddfcdafa-4016-4af7-963f-bdc8cb5b96d0",
-          "https://wa.me/244958030825",
-          "https://github.com/mds-label"
-        ]
-      }
-    </script>
+  </section>  <footer>
+    &copy; 2025 MDS - Media Development Studio. Todos os direitos reservados.
   </footer>
 </body>
 </html>
