@@ -1,109 +1,118 @@
 <!DOCTYPE html><html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MDS - Media Development Studio</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <style>
     body {
+      margin: 0;
+      font-family: Arial, sans-serif;
       background-color: #000;
       color: #fff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    h1, h2, h3 {
+    header {
+      background-color: #111;
       color: gold;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
     }
-    .artist-card {
-      background-color: #1a1a1a;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background-color: #111;
       border: 1px solid #333;
       border-radius: 10px;
+      margin: 15px;
+      width: 300px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .card .info {
       padding: 15px;
-      margin-bottom: 20px;
+      text-align: center;
     }
-    .artist-card img {
-      max-width: 100%;
-      border-radius: 10px;
+    .card .info h3 {
+      color: gold;
     }
-    .footer {
+    .card .info p {
+      color: #fff;
+      margin: 5px 0;
+    }
+    footer {
+      background-color: #111;
+      color: #fff;
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
-      color: #ccc;
     }
     a {
       color: gold;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "MDS - Media Development Studio",
-    "url": "https://mds-label.github.io/mds-ao/",
-    "logo": "https://raw.githubusercontent.com/mds-label/mds-ao/main/logo.png",
-    "founder": {
-      "@type": "Person",
-      "name": "Domingos da Rosa Cabingano"
-    },
-    "sameAs": [
-      "https://soundcloud.com/lewis-da-rosa-cabingano-544828581",
-      "https://musicbrainz.org/label/ddfcdafa-4016-4af7-963f-bdc8cb5b96d0",
-      "https://mds-mediadevelopmentstudio.bandcamp.com/"
-    ]
-  }
-  </script>
 </head>
 <body>
-  <div class="container mt-4">
-    <h1>MDS - Media Development Studio</h1>
-    <p>
-      Fundada por <strong>Domingos da Rosa Cabingano</strong>, a MDS é um selo independente com sede em Angola,
-      focada na produção, distribuição e promoção de artistas angolanos nos estilos R&B, Zouk, Kuduro e Pop.
-    </p><h2>Artistas</h2>
-<div class="artist-card">
-  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7BfaNRQR85YmzWevlxeUDkd8OZTKBsstsw_7yyi23DtuCUsFP0kzrgR-hv6NFXWIBlmx-J4v4rVTZKg6lpYX_SsidhkLuvsH7zwZ8gsWACVgYx-0ixAFO8c6gWPj05kfgMW1aon5J07mbaOSfKzORScpfIOM2KJrdT10ibmj4e_4z92lTyxOpzCh56WQ/s1600/IMG-20231129-WA0040(1).jpg" alt="Zoe Oliveira">
-  <h3>Zoe Oliveira</h3>
-  <p>Cantora e compositora</p>
-  <p>Música: Até Quando? (2023)<br />Gênero: Zouk<br />
-  <a href="https://on.soundcloud.com/Wsz9Gy62PirvziUkRH" target="_blank">🔊 Ouvir no SoundCloud</a></p>
-</div>
-
-<div class="artist-card">
+  <header>
+    MDS - Media Development Studio
+  </header>  <div class="container">
+    <div class="card">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7BfaNRQR85YmzWevlxeUDkd8OZTKBsstsw_7yyi23DtuCUsFP0kzrgR-hv6NFXWIBlmx-J4v4rVTZKg6lpYX_SsidhkLuvsH7zwZ8gsWACVgYx-0ixAFO8c6gWPj05kfgMW1aon5J07mbaOSfKzORScpfIOM2KJrdT10ibmj4e_4z92lTyxOpzCh56WQ/s1600/IMG-20231129-WA0040(1).jpg" alt="Zoe Oliveira">
+      <div class="info">
+        <h3>Zoe Oliveira</h3>
+        <p>Cantora e compositora</p>
+        <p>Música: Até Quando?</p>
+        <p>Ano de lançamento: 2023</p>
+        <p>Gênero: Zouk</p>
+        <p><a href="https://on.soundcloud.com/Wsz9Gy62PirvziUkRH" target="_blank">Ouvir a música</a></p>
+      </div>
+    </div><div class="card">
   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUzoOJ3Fpf3ZD22KeSAg9iYKxNuFBxgDlvLtmgSr61pNDfmGkijN_5ZtZ3Zh7xynaR0wXpNtL0q4iufF-4J_pcE_GSbUcodBRJs-eV9v6I19LcBcYrV298oKMfSejIHi_1yZIEAvGRl6k5Do2k8K4_Qx0GbMbBibP0hlqIJuDAz8fpfab5rZGvUkg51Eg/s1600/IMG-20231129-WA0039.jpg" alt="Líder Magno">
-  <h3>Líder Magno</h3>
-  <p>Cantor e compositor</p>
-  <p>Música: Ser Bonito é Pecado? (2023)<br />Gênero: Kuduro<br />
-  <a href="https://on.soundcloud.com/lYDAFoPm64ixVagwY1" target="_blank">🔊 Ouvir no SoundCloud</a></p>
-</div>
-
-<div class="artist-card">
-  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfh2xJFLErT619qvSpgS37YEqJYM4EoYGGfzdBJUD82XgCPJXWIbsJpjopt78hQtVDlVM1bDp6buXQWLUG1w-rHTRMOsRisL5Z2U2NQ-8TaB0rHaV_1xe5YNMjBR3W8tJE4nCkFOvdXVTKML_0NCX3UyxlIZPAmGxJhzsu5xfi_17DHH_J0QK8abrP_FA/s1600/IMG-20231129-WA0029.jpg" alt="Eduardo Comba">
-  <h3>Eduardo Comba ft: Zoe Oliveira</h3>
-  <p>Cantores</p>
-  <p>Música: Nalingue Yo (2023)<br />Gênero: Zouk R&B<br />
-  <a href="https://on.soundcloud.com/Ic8s0ndEtZZbsGn44C" target="_blank">🔊 Ouvir no SoundCloud</a></p>
-</div>
-
-<div class="artist-card">
-  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3aYWhRrlYgEHejsPgO4iiQ0uJxj3Nja2hFFIpz0v7MJq5ktNKwKoI44c_vegIHA57Bd4mJmOZnMXElYxbO2iuHA1cDBFCIDLqFQ_IgjQhFkV94XMtjGgXDMvmZ3haJrCtsnq3seZC8fd2z9TSPdJhZpM8BYn8mGysoUqeVmRKfco1l49K78KR_4mtQ1s/s3000/Design%20sem%20nome_20250610_010612_0000.jpg" alt="Da'Rosa & Lyo Tavares">
-  <h3>Da'Rosa & Lyo Tavares</h3>
-  <p>Música: Banzelo Seguro (2023)<br />Gênero: Zouk R&B<br />
-  <a href="https://m.soundcloud.com/lewis-da-rosa-cabingano-544828581/banzelo-seguro-lyo-tavares" target="_blank">🔊 Ouvir no SoundCloud</a><br />
-  <a href="https://youtu.be/fF-h1udXbWA?si=CrxigQdi7vsXoN1k" target="_blank">🎬 Ver no YouTube</a></p>
-</div>
-
-<h2>Redes Oficiais</h2>
-<ul>
-  <li><a href="https://soundcloud.com/lewis-da-rosa-cabingano-544828581" target="_blank">SoundCloud</a></li>
-  <li><a href="https://musicbrainz.org/label/ddfcdafa-4016-4af7-963f-bdc8cb5b96d0" target="_blank">MusicBrainz</a></li>
-  <li><a href="https://mds-mediadevelopmentstudio.bandcamp.com/" target="_blank">Bandcamp</a></li>
-  <li><a href="https://wa.me/244958030825" target="_blank">WhatsApp</a></li>
-</ul>
-
-<div class="footer">
-  &copy; MDS - Media Development Studio. Todos os direitos reservados.
-</div>
-
+  <div class="info">
+    <h3>Líder Magno</h3>
+    <p>Cantor e compositor</p>
+    <p>Música: Ser Bonito é Pecado?</p>
+    <p>Ano de lançamento: 2023</p>
+    <p>Gênero: Kuduro</p>
+    <p><a href="https://on.soundcloud.com/lYDAFoPm64ixVagwY1" target="_blank">Ouvir a música</a></p>
   </div>
+</div>
+
+<div class="card">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfh2xJFLErT619qvSpgS37YEqJYM4EoYGGfzdBJUD82XgCPJXWIbsJpjopt78hQtVDlVM1bDp6buXQWLUG1w-rHTRMOsRisL5Z2U2NQ-8TaB0rHaV_1xe5YNMjBR3W8tJE4nCkFOvdXVTKML_0NCX3UyxlIZPAmGxJhzsu5xfi_17DHH_J0QK8abrP_FA/s1600/IMG-20231129-WA0029.jpg" alt="Eduardo Comba">
+  <div class="info">
+    <h3>Eduardo Comba & Zoe Oliveira</h3>
+    <p>Interpretes da música: Nalingue Yo</p>
+    <p>Ano de lançamento: 2023</p>
+    <p>Gênero: Zouk R&B</p>
+    <p><a href="https://on.soundcloud.com/Ic8s0ndEtZZbsGn44C" target="_blank">Ouvir a música</a></p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3aYWhRrlYgEHejsPgO4iiQ0uJxj3Nja2hFFIpz0v7MJq5ktNKwKoI44c_vegIHA57Bd4mJmOZnMXElYxbO2iuHA1cDBFCIDLqFQ_IgjQhFkV94XMtjGgXDMvmZ3haJrCtsnq3seZC8fd2z9TSPdJhZpM8BYn8mGysoUqeVmRKfco1l49K78KR_4mtQ1s/s3000/Design%20sem%20nome_20250610_010612_0000.jpg" alt="Lyo Tavares & Da'Rosa">
+  <div class="info">
+    <h3>Lyo Tavares & Da'Rosa</h3>
+    <p>Interpretes da música: Banzelo Seguro</p>
+    <p>Ano de lançamento: 2023</p>
+    <p>Gênero: Zouk R&B</p>
+    <p><a href="https://m.soundcloud.com/lewis-da-rosa-cabingano-544828581/banzelo-seguro-lyo-tavares" target="_blank">Ouvir a música</a> | <a href="https://youtu.be/fF-h1udXbWA?si=CrxigQdi7vsXoN1k" target="_blank">Ver vídeo</a></p>
+  </div>
+</div>
+
+  </div>  <footer>
+    © 2025 MDS - Media Development Studio. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
