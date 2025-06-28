@@ -1,112 +1,86 @@
-<!DOCTYPE html><html lang="pt">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Site oficial da MDS - Media Development Studio. Descubra artistas como Da'Rosa, Zoe Oliveira, Líder Magno e Eduardo Comba. Ouça os lançamentos e conecte-se conosco." />
   <title>MDS - Media Development Studio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #000;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background-color: #111;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 10px;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    section {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .galeria img {
-      width: 100%;
-      max-width: 300px;
-      margin: 10px;
-      border-radius: 10px;
-    }
-    .galeria {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    footer {
-      background-color: #000;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
-    .link-container {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Montserrat', sans-serif; background: #111; color: #fff; line-height: 1.6; }
+    header, footer { background: #000; padding: 20px; text-align: center; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    main { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    h1, h2 { color: #f9c806; margin-bottom: 20px; }
+    section { margin-bottom: 60px; }
+    .artists, .gallery, .releases { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .artist, .release { background: #222; padding: 15px; border-radius: 8px; width: 200px; text-align: center; }
+    .artist img, .release img { width: 100%; border-radius: 8px; }
+    .contact a { display: inline-block; color: #f9c806; margin-top: 10px; }
+    footer p { font-size: 14px; color: #aaa; }
   </style>
 </head>
 <body>
   <header>
     <h1>MDS - Media Development Studio</h1>
-    <p>Produtora musical independente sediada em Angola, destacando talentos como Eduardo Comba, Zoe Oliveira, Líder Magno e Da'Rosa.</p>
-  </header>  <nav>
-    <a href="#galeria">Artistas</a>
-    <a href="#lancamentos">Lançamentos</a>
-    <a href="#links">Links Oficiais</a>
-    <a href="https://wa.me/244958030825">WhatsApp</a>
-  </nav>  <section id="galeria">
-    <h2>Galeria de Artistas</h2>
-    <div class="galeria">
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#artistas">Artistas</a>
+      <a href="#lancamentos">Lançamentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>  <main>
+    <section id="sobre">
+      <h2>Sobre a MDS</h2>
+      <p>MDS - Media Development Studio é uma produtora sediada em Luanda, Angola, fundada por <strong>Domingos da Rosa Cabingano</strong>. Trabalhamos com talentos emergentes como Da'Rosa, Zoe Oliveira, Eduardo Comba e Líder Magno. Também colaboramos com Lyo Tavares e Defest Genial. Acreditamos no poder da música para transformar e conectar.</p>
+    </section><section id="artistas">
+  <h2>Artistas</h2>
+  <div class="artists">
+    <div class="artist">
       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7BfaNRQR85YmzWevlxeUDkd8OZTKBsstsw_7yyi23DtuCUsFP0kzrgR-hv6NFXWIBlmx-J4v4rVTZKg6lpYX_SsidhkLuvsH7zwZ8gsWACVgYx-0ixAFO8c6gWPj05kfgMW1aon5J07mbaOSfKzORScpfIOM2KJrdT10ibmj4e_4z92lTyxOpzCh56WQ/s1600/IMG-20231129-WA0040(1).jpg" alt="Zoe Oliveira">
+      <p>Zoe Oliveira</p>
+    </div>
+    <div class="artist">
       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUzoOJ3Fpf3ZD22KeSAg9iYKxNuFBxgDlvLtmgSr61pNDfmGkijN_5ZtZ3Zh7xynaR0wXpNtL0q4iufF-4J_pcE_GSbUcodBRJs-eV9v6I19LcBcYrV298oKMfSejIHi_1yZIEAvGRl6k5Do2k8K4_Qx0GbMbBibP0hlqIJuDAz8fpfab5rZGvUkg51Eg/s1600/IMG-20231129-WA0039.jpg" alt="Líder Magno">
+      <p>Líder Magno</p>
+    </div>
+    <div class="artist">
       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfh2xJFLErT619qvSpgS37YEqJYM4EoYGGfzdBJUD82XgCPJXWIbsJpjopt78hQtVDlVM1bDp6buXQWLUG1w-rHTRMOsRisL5Z2U2NQ-8TaB0rHaV_1xe5YNMjBR3W8tJE4nCkFOvdXVTKML_0NCX3UyxlIZPAmGxJhzsu5xfi_17DHH_J0QK8abrP_FA/s1600/IMG-20231129-WA0029.jpg" alt="Eduardo Comba">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3aYWhRrlYgEHejsPgO4iiQ0uJxj3Nja2hFFIpz0v7MJq5ktNKwKoI44c_vegIHA57Bd4mJmOZnMXElYxbO2iuHA1cDBFCIDLqFQ_IgjQhFkV94XMtjGgXDMvmZ3haJrCtsnq3seZC8fd2z9TSPdJhZpM8BYn8mGysoUqeVmRKfco1l49K78KR_4mtQ1s/s3000/Design%20sem%20nome_20250610_010612_0000.jpg" alt="Da'Rosa e Lyo Tavares">
+      <p>Eduardo Comba</p>
     </div>
-  </section>  <section id="lancamentos">
-    <h2>Lançamentos Recentes</h2>
-    <ul>
-      <li><strong>Ser Bonito é Pecado?</strong> - Líder Magno – <a href="https://on.soundcloud.com/lYDAFoPm64ixVagwY1" target="_blank">Ouvir</a></li>
-      <li><strong>Até Quando?</strong> - Zoe Oliveira – <a href="https://on.soundcloud.com/Wsz9Gy62PirvziUkRH" target="_blank">Ouvir</a></li>
-      <li><strong>Nalingue Yo</strong> - Eduardo Comba ft. Zoe Oliveira – <a href="https://on.soundcloud.com/Ic8s0ndEtZZbsGn44C" target="_blank">Ouvir</a></li>
-    </ul>
-  </section>  <section id="links">
-    <h2>Links Oficiais</h2>
-    <div class="link-container">
-      <a href="https://mds-mediadevelopmentstudio.bandcamp.com/" target="_blank">Bandcamp</a>
-      <a href="https://soundcloud.com/mds-media-development-studio" target="_blank">SoundCloud</a>
-      <a href="https://musicbrainz.org/label/ddfcdafa-4016-4af7-963f-bdc8cb5b96d0" target="_blank">MusicBrainz</a>
-      <a href="https://wa.me/244958030825" target="_blank">WhatsApp</a>
+    <div class="artist">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3aYWhRrlYgEHejsPgO4iiQ0uJxj3Nja2hFFIpz0v7MJq5ktNKwKoI44c_vegIHA57Bd4mJmOZnMXElYxbO2iuHA1cDBFCIDLqFQ_IgjQhFkV94XMtjGgXDMvmZ3haJrCtsnq3seZC8fd2z9TSPdJhZpM8BYn8mGysoUqeVmRKfco1l49K78KR_4mtQ1s/s3000/Design%20sem%20nome_20250610_010612_0000.jpg" alt="Da'Rosa & Lyo">
+      <p>Da'Rosa & Lyo Tavares</p>
     </div>
-  </section>  <footer>
-    &copy; 2025 MDS - Media Development Studio. Todos os direitos reservados.
-  </footer>  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "MDS - Media Development Studio",
-    "url": "https://mds-label.github.io/mds-ao/",
-    "logo": "https://raw.githubusercontent.com/LewisCabingano/Da-Rosa/main/Galleryit_20250411_1744410634.png",
-    "sameAs": [
-      "https://mds-mediadevelopmentstudio.bandcamp.com/",
-      "https://soundcloud.com/mds-media-development-studio",
-      "https://musicbrainz.org/label/ddfcdafa-4016-4af7-963f-bdc8cb5b96d0",
-      "https://wa.me/244958030825"
-    ]
-  }
-  </script></body>
+  </div>
+</section>
+
+<section id="lancamentos">
+  <h2>Lançamentos Recentes</h2>
+  <div class="releases">
+    <div class="release">
+      <img src="https://i1.sndcdn.com/artworks-lYDAFoPm64ixVagwY1-t500x500.jpg" alt="Ser Bonito é Pecado">
+      <p><strong>Ser Bonito é Pecado?</strong><br>Líder Magno<br><a href="https://on.soundcloud.com/lYDAFoPm64ixVagwY1" target="_blank">Ouvir no SoundCloud</a></p>
+    </div>
+    <div class="release">
+      <img src="https://i1.sndcdn.com/artworks-Wsz9Gy62PirvziUkRH-t500x500.jpg" alt="Até Quando?">
+      <p><strong>Até Quando?</strong><br>Zoe Oliveira<br><a href="https://on.soundcloud.com/Wsz9Gy62PirvziUkRH" target="_blank">Ouvir no SoundCloud</a></p>
+    </div>
+    <div class="release">
+      <img src="https://i1.sndcdn.com/artworks-Ic8s0ndEtZZbsGn44C-t500x500.jpg" alt="Nalingue Yo">
+      <p><strong>Nalingue Yo</strong><br>Eduardo Comba ft. Zoe Oliveira<br><a href="https://on.soundcloud.com/Ic8s0ndEtZZbsGn44C" target="_blank">Ouvir no SoundCloud</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="contact">
+  <h2>Contato</h2>
+  <p>Entre em contato conosco via WhatsApp:</p>
+  <a href="https://wa.me/244958030825" target="_blank">+244 958 030 825</a>
+</section>
+
+  </main>  <footer>
+    <p>&copy; 2025 MDS - Media Development Studio | Desenvolvido por Domingos da Rosa Cabingano</p>
+  </footer>
+</body>
 </html>
