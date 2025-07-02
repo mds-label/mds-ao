@@ -1,87 +1,94 @@
-<!DOCTYPE html><html lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galeria - MDS</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeria MDS</title>
   <style>
     body {
-      background-color: #111;
-      color: #fff;
+      background-color: #000;
+      color: #FFD700;
       font-family: Arial, sans-serif;
-      text-align: center;
+      margin: 0;
       padding: 20px;
     }
-    .logo {
-      width: 120px;
-      margin-bottom: 20px;
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
     }
     .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
+      padding: 0 10px;
     }
-    .gallery-item {
-      background-color: #222;
-      padding: 10px;
+    .photo {
+      background-color: #111;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    }
+    .photo img {
+      max-width: 100%;
       border-radius: 10px;
-      width: 250px;
+      margin-bottom: 10px;
     }
-    .gallery-item img {
-      width: 100%;
-      border-radius: 10px;
+    .photo p {
+      color: #fff;
+      font-size: 14px;
     }
-    .caption {
-      margin-top: 10px;
-      font-weight: bold;
+    .home-link {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
     }
-    .home-button {
-      margin-top: 30px;
-    }
-    .home-button a {
+    .home-link a {
       background-color: #FFD700;
-      padding: 10px 20px;
       color: #000;
+      padding: 10px 25px;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 8px;
       font-weight: bold;
+    }
+    .home-link a:hover {
+      background-color: #e6c200;
     }
   </style>
 </head>
 <body>
-  <img src="https://f4.bcbits.com/img/0040155526_20.jpg" alt="MDS Logo" class="logo">
-  <h1>Galeria de Imagens</h1>
+  <h1>Galeria de Artistas - MDS</h1>
   <div class="gallery">
-    <div class="gallery-item">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUzoOJ3Fpf3ZD22KeSAg9iYKxNuFBxgDlvLtmgSr61pNDfmGkijN_5ZtZ3Zh7xynaR0wXpNtL0q4iufF-4J_pcE_GSbUcodBRJs-eV9v6I19LcBcYrV298oKMfSejIHi_1yZIEAvGRl6k5Do2k8K4_Qx0GbMbBibP0hlqIJuDAz8fpfab5rZGvUkg51Eg" alt="Zoe Oliveira">
-      <div class="caption">Zoe Oliveira</div>
+    <div class="photo">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqxE_llqVTI2tkPARKpvueVA9Qtvk52PlytIFj2nFLaoHm7pi1winKcpzMUZY_I63SnCvcaihCI5vrNeZpbvSdyS89JY2-fTF-ORZKIcRACiJUEDOMUcjX_d52XeROCGsDCAfMS_I7Uz4nvHllAIHd42dJvaZlAqub1YUcftaDlOmRo8WljT6mzLJwMmE/s1000/IMG-20250605-WA0017.jpg" alt="DJ Ketchup Afro">
+      <p>DJ Ketchup Afro - Produtor Musical</p>
     </div>
-    <div class="gallery-item">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfh2xJFLErT619qvSpgS37YEqJYM4EoYGGfzdBJUD82XgCPJXWIbsJpjopt78hQtVDlVM1bDp6buXQWLUG1w-rHTRMOsRisL5Z2U2NQ-8TaB0rHaV_1xe5YNMjBR3W8tJE4nCkFOvdXVTKML_0NCX3UyxlIZPAmGxJhzsu5xfi_17DHH_J0QK8abrP_FA" alt="Eduardo Comba">
-      <div class="caption">Eduardo Comba</div>
+    <div class="photo">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUWUgzb8IYN2fQOiwgUgUZbukZgG7439_DfK6UYl81XiqPhKzkkfPjL_84aThlzWQ5Twshax55ihYPHyvPbmjjVn8K-hDBbrV4a8EhUCCeuiaYoWyOhZRDL6xHlO3FZfP7NFcCydGJqdCve3mrOAHSHwtUOiuEJe6qNGdO7J0uc24xBmiP4Se-RfJeW4U/s2048/1749504402311.jpg" alt="DJ Sirigu">
+      <p>DJ Sirigu - Produtor Musical</p>
     </div>
-    <div class="gallery-item">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUzoOJ3Fpf3ZD22KeSAg9iYKxNuFBxgDlvLtmgSr61pNDfmGkijN_5ZtZ3Zh7xynaR0wXpNtL0q4iufF-4J_pcE_GSbUcodBRJs-eV9v6I19LcBcYrV298oKMfSejIHi_1yZIEAvGRl6k5Do2k8K4_Qx0GbMbBibP0hlqIJuDAz8fpfab5rZGvUkg51Eg" alt="Líder Magno">
-      <div class="caption">Líder Magno</div>
+    <div class="photo">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2XvFq75pyiyl4Kev727sVBa3qz9kY78Op-Udj_XsRplHIhNls_gBdhgUOtaJ-XX8PamdZ5O_haQqacE5TqlVmOFm-9Vuu26crnLIVh09OWcIJlYDgbvV4ihDEFlXHTwTWqIclzeF08RyclbPG0aCQyrJvAt2aUx-FVzQ1K8AFPaXKd_LQBi_XVPYcw04/s1600/IMG-20250608-WA0013.jpg" alt="Lyo Tavares">
+      <p>Lyo Tavares - Cantor e Produtor</p>
     </div>
-    <div class="gallery-item">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqxE_llqVTI2tkPARKpvueVA9Qtvk52PlytIFj2nFLaoHm7pi1winKcpzMUZY_I63SnCvcaihCI5vrNeZpbvSdyS89JY2-fTF-ORZKIcRACiJUEDOMUcjX_d52XeROCGsDCAfMS_I7Uz4nvHllAIHd42dJvaZlAqub1YUcftaDlOmRo8WljT6mzLJwMmE" alt="DJ Ketchup Afro">
-      <div class="caption">DJ Ketchup Afro</div>
+    <div class="photo">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw2pZEBTTUZB9AtGJFuJ8DHUlZHRK-SaPWhm9HDK2vEsWeW0-Y4U0a6W3oCmCqGU-9UYKxy5Ax1oeTLL16zMltCL4hN3x-DwFwh4AgDJDmtkG0dzBBy95Tn0zr_VC8SdcRCDsihlnmlKP1w4CW2Hz5v3nRQKh7RJvRWjC3vb5JLG2hmwncOWk_B2q6qQo/s1600/Eduardo.jpg" alt="Eduardo Comba">
+      <p>Eduardo Comba - Cantor e Compositor</p>
     </div>
-    <div class="gallery-item">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2XvFq75pyiyl4Kev727sVBa3qz9kY78Op-Udj_XsRplHIhNls_gBdhgUOtaJ-XX8PamdZ5O_haQqacE5TqlVmOFm-9Vuu26crnLIVh09OWcIJlYDgbvV4ihDEFlXHTwTWqIclzeF08RyclbPG0aCQyrJvAt2aUx-FVzQ1K8AFPaXKd_LQBi_XVPYcw04" alt="Lyo Tavares">
-      <div class="caption">Lyo Tavares</div>
+    <div class="photo">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQzGTsfuziEpNQ6IOXMS5PQcgXZ4LGXbjs5vNnhz0ffF1v4WUlKocvDh_K8dx3nYcYOxu8OZFYrrW2Y3j3Oi-vs_71i-nARwGR6kZEt9DpQdSc8HLWR4kM7ZVG7g_AAlx2rCU_StjxuPCTrQ6Eum_jNSzMuJHKb1YlKHHXge5UYofOKj5YwsEqehkjdw/s1600/ZoeOliveira.jpg" alt="Zoe Oliveira">
+      <p>Zoe Oliveira - Cantora e Compositora</p>
     </div>
-    <div class="gallery-item">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUWUgzb8IYN2fQOiwgUgUZbukZgG7439_DfK6UYl81XiqPhKzkkfPjL_84aThlzWQ5Twshax55ihYPHyvPbmjjVn8K-hDBbrV4a8EhUCCeuiaYoWyOhZRDL6xHlO3FZfP7NFcCydGJqdCve3mrOAHSHwtUOiuEJe6qNGdO7J0uc24xBmiP4Se-RfJeW4U" alt="Sirigu">
-      <div class="caption">Sirigu</div>
+    <div class="photo">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBk1GntmQUp6ZjBOBlOtS8pQm7J1aAdt8AXzJm6-YLFFFLbNVtdER8UpySrUJ1qbw80zPg5ZxSVOZ9jlIKB_2DjDdO3SCPLuZLCpStOQh_dZkWynJ0F3kzITOr8I0bgmyfxSG4XYOlz2BbAPftD1qkGBElMK1J4cLuYiULCAbDr38a9YZgN4XXaxh1nA/s2048/LiderMagno.jpg" alt="Líder Magno">
+      <p>Líder Magno - Cantor e Compositor</p>
     </div>
-    <div class="gallery-item">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3aYWhRrlYgEHejsPgO4iiQ0uJxj3Nja2hFFIpz0v7MJq5ktNKwKoI44c_vegIHA57Bd4mJmOZnMXElYxbO2iuHA1cDBFCIDLqFQ_IgjQhFkV94XMtjGgXDMvmZ3haJrCtsnq3seZC8fd2z9TSPdJhZpM8BYn8mGysoUqeVmRKfco1l49K78KR_4mtQ1s" alt="Da'Rosa & Lyo Tavares">
-      <div class="caption">Da'Rosa & Lyo Tavares</div>
+    <div class="photo">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3aYWhRrlYgEHejsPgO4iiQ0uJxj3Nja2hFFIpz0v7MJq5ktNKwKoI44c_vegIHA57Bd4mJmOZnMXElYxbO2iuHA1cDBFCIDLqFQ_IgjQhFkV94XMtjGgXDMvmZ3haJrCtsnq3seZC8fd2z9TSPdJhZpM8BYn8mGysoUqeVmRKfco1l49K78KR_4mtQ1s/s3000/Design%20sem%20nome_20250610_010612_0000.jpg" alt="Da'Rosa e Lyo">
+      <p>Lyo Tavares & Da'Rosa - Colaboração Musical</p>
     </div>
   </div>
-  <div class="home-button">
+  <div class="home-link">
     <a href="index.html">Voltar à Página Inicial</a>
   </div>
 </body>
