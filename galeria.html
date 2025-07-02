@@ -1,112 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <title>Galeria MDS</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria - MDS</title>
   <style>
     body {
-      background-color: #000;
-      color: #fff;
-      font-family: 'Arial', sans-serif;
       margin: 0;
-      padding: 20px;
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    header {
       text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      max-width: 150px;
+      margin-bottom: 10px;
     }
 
     h1 {
       color: gold;
-      margin-bottom: 10px;
-    }
-
-    .logo {
-      max-width: 150px;
-      margin-bottom: 20px;
     }
 
     .galeria {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
     }
 
-    .foto {
-      width: 250px;
-      background: #1a1a1a;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
-    }
-
-    .foto img {
+    .galeria img {
       width: 100%;
       height: auto;
+      object-fit: cover;
+      border: 2px solid gold;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
     }
 
-    .legenda {
-      padding: 10px;
-      font-size: 14px;
-      color: #ccc;
+    .galeria img:hover {
+      transform: scale(1.03);
     }
 
-    a.voltar {
-      display: inline-block;
-      margin-top: 30px;
-      background-color: gold;
-      color: #000;
+    .voltar {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .voltar a {
+      color: gold;
       text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 8px;
       font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <!-- Logotipo MDS -->
-  <img class="logo" src="https://f4.bcbits.com/img/0040155526_20.jpg" alt="Logotipo MDS">
-
-  <h1>Galeria Oficial MDS</h1>
+  <header>
+    <img src="https://f4.bcbits.com/img/0040155526_20.jpg" alt="Logotipo MDS" />
+    <h1>Galeria de Imagens</h1>
+  </header>
 
   <div class="galeria">
-    <!-- Artistas -->
-    <div class="foto">
-      <img src="https://your-image-link-zoe.jpg" alt="Zoe Oliveira">
-      <div class="legenda">Zoe Oliveira – Cantora e Compositora</div>
-    </div>
-
-    <div class="foto">
-      <img src="https://your-image-link-eduardo.jpg" alt="Eduardo Comba">
-      <div class="legenda">Eduardo Comba – Cantor e Compositor</div>
-    </div>
-
-    <div class="foto">
-      <img src="https://your-image-link-magno.jpg" alt="Líder Magno">
-      <div class="legenda">Líder Magno – Cantor e Compositor</div>
-    </div>
-
-    <div class="foto">
-      <img src="https://your-image-link-darosa.jpg" alt="Da'Rosa">
-      <div class="legenda">Da'Rosa – Cantor e Compositor</div>
-    </div>
-
-    <!-- Parceiros -->
-    <div class="foto">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqxE_llqVTI2tkPARKpvueVA9Qtvk52PlytIFj2nFLaoHm7pi1winKcpzMUZY_I63SnCvcaihCI5vrNeZpbvSdyS89JY2-fTF-ORZKIcRACiJUEDOMUcjX_d52XeROCGsDCAfMS_I7Uz4nvHllAIHd42dJvaZlAqub1YUcftaDlOmRo8WljT6mzLJwMmE/s1000/IMG-20250605-WA0017.jpg" alt="DJ Ketchup Afro">
-      <div class="legenda">DJ Ketchup Afro – Produtor Musical</div>
-    </div>
-
-    <div class="foto">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2XvFq75pyiyl4Kev727sVBa3qz9kY78Op-Udj_XsRplHIhNls_gBdhgUOtaJ-XX8PamdZ5O_haQqacE5TqlVmOFm-9Vuu26crnLIVh09OWcIJlYDgbvV4ihDEFlXHTwTWqIclzeF08RyclbPG0aCQyrJvAt2aUx-FVzQ1K8AFPaXKd_LQBi_XVPYcw04/s1600/IMG-20250608-WA0013.jpg" alt="Lyo Tavares">
-      <div class="legenda">Lyo Tavares – Produtor Musical</div>
-    </div>
-
-    <div class="foto">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUWUgzb8IYN2fQOiwgUgUZbukZgG7439_DfK6UYl81XiqPhKzkkfPjL_84aThlzWQ5Twshax55ihYPHyvPbmjjVn8K-hDBbrV4a8EhUCCeuiaYoWyOhZRDL6xHlO3FZfP7NFcCydGJqdCve3mrOAHSHwtUOiuEJe6qNGdO7J0uc24xBmiP4Se-RfJeW4U/s2048/1749504402311.jpg" alt="DJ Sirigu">
-      <div class="legenda">DJ Sirigu – Produtor Musical</div>
-    </div>
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2XvFq75pyiyl4Kev727sVBa3qz9kY78Op-Udj_XsRplHIhNls_gBdhgUOtaJ-XX8PamdZ5O_haQqacE5TqlVmOFm-9Vuu26crnLIVh09OWcIJlYDgbvV4ihDEFlXHTwTWqIclzeF08RyclbPG0aCQyrJvAt2aUx-FVzQ1K8AFPaXKd_LQBi_XVPYcw04/s1600/IMG-20250608-WA0013.jpg" alt="Lyo Tavares" />
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3aYWhRrlYgEHejsPgO4iiQ0uJxj3Nja2hFFIpz0v7MJq5ktNKwKoI44c_vegIHA57Bd4mJmOZnMXElYxbO2iuHA1cDBFCIDLqFQ_IgjQhFkV94XMtjGgXDMvmZ3haJrCtsnq3seZC8fd2z9TSPdJhZpM8BYn8mGysoUqeVmRKfco1l49K78KR_4mtQ1s/s3000/Design%20sem%20nome_20250610_010612_0000.jpg" alt="Lyo Tavares & Da'Rosa" />
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUWUgzb8IYN2fQOiwgUgUZbukZgG7439_DfK6UYl81XiqPhKzkkfPjL_84aThlzWQ5Twshax55ihYPHyvPbmjjVn8K-hDBbrV4a8EhUCCeuiaYoWyOhZRDL6xHlO3FZfP7NFcCydGJqdCve3mrOAHSHwtUOiuEJe6qNGdO7J0uc24xBmiP4Se-RfJeW4U/s2048/1749504402311.jpg" alt="DJ Sirigu" />
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqxE_llqVTI2tkPARKpvueVA9Qtvk52PlytIFj2nFLaoHm7pi1winKcpzMUZY_I63SnCvcaihCI5vrNeZpbvSdyS89JY2-fTF-ORZKIcRACiJUEDOMUcjX_d52XeROCGsDCAfMS_I7Uz4nvHllAIHd42dJvaZlAqub1YUcftaDlOmRo8WljT6mzLJwMmE/s1000/IMG-20250605-WA0017.jpg" alt="DJ Ketchup Afro" />
   </div>
 
-  <a class="voltar" href="https://mds-label.github.io/mds-ao/">← Voltar à Página Inicial</a>
+  <div class="voltar">
+    <a href="index.html">← Voltar para a página principal</a>
+  </div>
 </body>
 </html>
