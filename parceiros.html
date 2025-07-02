@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Parceiros - MDS</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parceiros | MDS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
     body {
       margin: 0;
@@ -17,94 +17,98 @@
       padding: 20px;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
+    header img {
+      max-height: 80px;
+    }
+    h1 {
       color: gold;
+      text-align: center;
+      margin: 30px 0 10px;
     }
-    .container {
+    .parceiros-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
       padding: 20px;
     }
-    .partner {
-      background-color: #1a1a1a;
-      margin-bottom: 30px;
+    .parceiro {
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      max-width: 300px;
+      text-align: center;
       padding: 20px;
-      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
     }
-    .partner img {
-      max-width: 100%;
-      height: auto;
+    .parceiro img {
+      width: 100%;
       border-radius: 8px;
     }
-    .partner h2 {
+    .parceiro h2 {
       color: gold;
+      margin: 15px 0 5px;
     }
-    .partner p {
-      margin-top: 10px;
-      color: #eee;
+    .parceiro p {
+      font-size: 14px;
+      color: #ccc;
     }
-    .partner a {
+    .parceiro a {
       display: inline-block;
       margin-top: 10px;
-      color: #00aced;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .btn-voltar {
-      display: inline-block;
-      margin: 30px auto 0;
+      padding: 10px 15px;
       background-color: gold;
       color: #000;
+      border-radius: 6px;
       text-decoration: none;
-      padding: 12px 25px;
-      border-radius: 5px;
       font-weight: bold;
     }
-    footer {
+    .btn-home {
+      display: block;
       text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      color: #888;
-      margin-top: 40px;
+      margin: 40px 0;
+    }
+    .btn-home a {
+      background-color: gold;
+      color: #000;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Parceiros Oficiais da MDS</h1>
+    <img src="https://f4.bcbits.com/img/0040155526_20.jpg" alt="Logotipo da MDS" />
   </header>
 
-  <div class="container">
+  <h1>Parceiros Oficiais</h1>
+  <div class="parceiros-container">
 
-    <div class="partner">
-      <img src="https://f4.bcbits.com/img/0040155526_20.jpg" alt="Lyo Tavares">
-      <h2>Lyo Tavares</h2>
-      <p>Cantor, compositor e produtor musical. Atua como colaborador oficial e produtor em diversos projetos da MDS.</p>
-      <a href="https://www.google.com/search?q=lyo+tavares" target="_blank">Saiba mais</a>
-    </div>
-
-    <div class="partner">
-      <img src="https://i.ibb.co/Srpq1jz/djsirigu.jpg" alt="DJ Sirigu">
-      <h2>DJ Sirigu</h2>
-      <p>Produtor musical e colaborador da MDS. Reconhecido por sua atuação nos bastidores e contribuições artísticas.</p>
-    </div>
-
-    <div class="partner">
-      <img src="https://djketchupafro.fr/assets/img/about/about-1.jpg" alt="DJ Ketchup Afro">
+    <div class="parceiro">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqxE_llqVTI2tkPARKpvueVA9Qtvk52PlytIFj2nFLaoHm7pi1winKcpzMUZY_I63SnCvcaihCI5vrNeZpbvSdyS89JY2-fTF-ORZKIcRACiJUEDOMUcjX_d52XeROCGsDCAfMS_I7Uz4nvHllAIHd42dJvaZlAqub1YUcftaDlOmRo8WljT6mzLJwMmE/s1000/IMG-20250605-WA0017.jpg" alt="DJ Ketchup Afro">
       <h2>DJ Ketchup Afro</h2>
-      <p>Artista internacional e parceiro da MDS. Tem colaborado na divulgação da música angolana ao redor do mundo.</p>
-      <a href="https://djketchupafro.fr/" target="_blank">Visite o site oficial</a>
+      <p>Produtor e parceiro criativo da MDS. Colabora em projetos de Kuduro e Afrohouse.</p>
+      <a href="https://ketchupafro.com" target="_blank">Saiba mais</a>
     </div>
 
-    <div style="text-align:center;">
-      <a class="btn-voltar" href="index.html">⬅ Voltar à Página Inicial</a>
+    <div class="parceiro">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2XvFq75pyiyl4Kev727sVBa3qz9kY78Op-Udj_XsRplHIhNls_gBdhgUOtaJ-XX8PamdZ5O_haQqacE5TqlVmOFm-9Vuu26crnLIVh09OWcIJlYDgbvV4ihDEFlXHTwTWqIclzeF08RyclbPG0aCQyrJvAt2aUx-FVzQ1K8AFPaXKd_LQBi_XVPYcw04/s1600/IMG-20250608-WA0013.jpg" alt="Lyo Tavares">
+      <h2>Lyo Tavares</h2>
+      <p>Produtor musical e colaborador direto em diversos lançamentos da MDS.</p>
+      <a href="https://lewiscabingano.github.io/Da-Rosa/" target="_blank">Saiba mais</a>
+    </div>
+
+    <div class="parceiro">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUWUgzb8IYN2fQOiwgUgUZbukZgG7439_DfK6UYl81XiqPhKzkkfPjL_84aThlzWQ5Twshax55ihYPHyvPbmjjVn8K-hDBbrV4a8EhUCCeuiaYoWyOhZRDL6xHlO3FZfP7NFcCydGJqdCve3mrOAHSHwtUOiuEJe6qNGdO7J0uc24xBmiP4Se-RfJeW4U/s2048/1749504402311.jpg" alt="DJ Sirigu">
+      <h2>DJ Sirigu</h2>
+      <p>Responsável pela produção de faixas em Kuduro e Afrobeat. Parceiro técnico da MDS.</p>
     </div>
 
   </div>
 
-  <footer>
-    &copy; 2025 MDS - Media Development Studio. Todos os direitos reservados.
-  </footer>
-
+  <div class="btn-home">
+    <a href="https://mds-label.github.io/mds-ao/">← Voltar à Página Inicial</a>
+  </div>
 </body>
 </html>
