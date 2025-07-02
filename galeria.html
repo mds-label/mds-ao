@@ -1,78 +1,22 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Galeria - MDS</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: #000;
-      font-family: Arial, sans-serif;
-      color: white;
-    }
+<div class="gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+  <!-- DJ Ketchup Afro -->
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqxE_llqVTI2tkPARKpvueVA9Qtvk52PlytIFj2nFLaoHm7pi1winKcpzMUZY_I63SnCvcaihCI5vrNeZpbvSdyS89JY2-fTF-ORZKIcRACiJUEDOMUcjX_d52XeROCGsDCAfMS_I7Uz4nvHllAIHd42dJvaZlAqub1YUcftaDlOmRo8WljT6mzLJwMmE/s1000/IMG-20250605-WA0017.jpg" alt="DJ Ketchup Afro">
 
-    header {
-      text-align: center;
-      padding: 20px;
-    }
+  <!-- Lyo Tavares (individual) -->
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2XvFq75pyiyl4Kev727sVBa3qz9kY78Op-Udj_XsRplHIhNls_gBdhgUOtaJ-XX8PamdZ5O_haQqacE5TqlVmOFm-9Vuu26crnLIVh09OWcIJlYDgbvV4ihDEFlXHTwTWqIclzeF08RyclbPG0aCQyrJvAt2aUx-FVzQ1K8AFPaXKd_LQBi_XVPYcw04/s1600/IMG-20250608-WA0013.jpg" alt="Lyo Tavares">
 
-    header img {
-      max-width: 150px;
-      margin-bottom: 10px;
-    }
+  <!-- DJ Sirigu -->
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUWUgzb8IYN2fQOiwgUgUZbukZgG7439_DfK6UYl81XiqPhKzkkfPjL_84aThlzWQ5Twshax55ihYPHyvPbmjjVn8K-hDBbrV4a8EhUCCeuiaYoWyOhZRDL6xHlO3FZfP7NFcCydGJqdCve3mrOAHSHwtUOiuEJe6qNGdO7J0uc24xBmiP4Se-RfJeW4U/s2048/1749504402311.jpg" alt="DJ Sirigu">
 
-    h1 {
-      color: gold;
-    }
+  <!-- Zoe Oliveira -->
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3aYWhRrlYgEHejsPgO4iiQ0uJxj3Nja2hFFIpz0v7MJq5ktNKwKoI44c_vegIHA57Bd4mJmOZnMXElYxbO2iuHA1cDBFCIDLqFQ_IgjQhFkV94XMtjGgXDMvmZ3haJrCtsnq3seZC8fd2z9TSPdJhZpM8BYn8mGysoUqeVmRKfco1l49K78KR_4mtQ1s/s3000/Design%20sem%20nome_20250610_010612_0000.jpg" alt="Zoe Oliveira">
 
-    .galeria {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-      padding: 20px;
-    }
+  <!-- Líder Magno -->
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUzoOJ3Fpf3ZD22KeSAg9iYKxNuFBxgDlvLtmgSr61pNDfmGkijN_5ZtZ3Zh7xynaR0wXpNtL0q4iufF-4J_pcE_GSbUcodBRJs-eV9v6I19LcBcYrV298oKMfSejIHi_1yZIEAvGRl6k5Do2k8K4_Qx0GbMbBibP0hlqIJuDAz8fpfab5rZGvUkg51Eg/s1600/IMG-20231129-WA0039.jpg" alt="Líder Magno">
 
-    .galeria img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      border: 2px solid gold;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
-    }
+  <!-- Eduardo Comba -->
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfh2xJFLErT619qvSpgS37YEqJYM4EoYGGfzdBJUD82XgCPJXWIbsJpjopt78hQtVDlVM1bDp6buXQWLUG1w-rHTRMOsRisL5Z2U2NQ-8TaB0rHaV_1xe5YNMjBR3W8tJE4nCkFOvdXVTKML_0NCX3UyxlIZPAmGxJhzsu5xfi_17DHH_J0QK8abrP_FA/s1600/IMG-20231129-WA0029.jpg" alt="Eduardo Comba">
 
-    .galeria img:hover {
-      transform: scale(1.03);
-    }
-
-    .voltar {
-      text-align: center;
-      margin: 20px;
-    }
-
-    .voltar a {
-      color: gold;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="https://f4.bcbits.com/img/0040155526_20.jpg" alt="Logotipo MDS" />
-    <h1>Galeria de Imagens</h1>
-  </header>
-
-  <div class="galeria">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2XvFq75pyiyl4Kev727sVBa3qz9kY78Op-Udj_XsRplHIhNls_gBdhgUOtaJ-XX8PamdZ5O_haQqacE5TqlVmOFm-9Vuu26crnLIVh09OWcIJlYDgbvV4ihDEFlXHTwTWqIclzeF08RyclbPG0aCQyrJvAt2aUx-FVzQ1K8AFPaXKd_LQBi_XVPYcw04/s1600/IMG-20250608-WA0013.jpg" alt="Lyo Tavares" />
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3aYWhRrlYgEHejsPgO4iiQ0uJxj3Nja2hFFIpz0v7MJq5ktNKwKoI44c_vegIHA57Bd4mJmOZnMXElYxbO2iuHA1cDBFCIDLqFQ_IgjQhFkV94XMtjGgXDMvmZ3haJrCtsnq3seZC8fd2z9TSPdJhZpM8BYn8mGysoUqeVmRKfco1l49K78KR_4mtQ1s/s3000/Design%20sem%20nome_20250610_010612_0000.jpg" alt="Lyo Tavares & Da'Rosa" />
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUWUgzb8IYN2fQOiwgUgUZbukZgG7439_DfK6UYl81XiqPhKzkkfPjL_84aThlzWQ5Twshax55ihYPHyvPbmjjVn8K-hDBbrV4a8EhUCCeuiaYoWyOhZRDL6xHlO3FZfP7NFcCydGJqdCve3mrOAHSHwtUOiuEJe6qNGdO7J0uc24xBmiP4Se-RfJeW4U/s2048/1749504402311.jpg" alt="DJ Sirigu" />
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqxE_llqVTI2tkPARKpvueVA9Qtvk52PlytIFj2nFLaoHm7pi1winKcpzMUZY_I63SnCvcaihCI5vrNeZpbvSdyS89JY2-fTF-ORZKIcRACiJUEDOMUcjX_d52XeROCGsDCAfMS_I7Uz4nvHllAIHd42dJvaZlAqub1YUcftaDlOmRo8WljT6mzLJwMmE/s1000/IMG-20250605-WA0017.jpg" alt="DJ Ketchup Afro" />
-  </div>
-
-  <div class="voltar">
-    <a href="index.html">← Voltar para a página principal</a>
-  </div>
-</body>
-</html>
+  <!-- Lyo Tavares & Da’Rosa (juntos) -->
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpt1J3jaYoNlWR82_5UOg1cPK7Uz0Od6k-EygTszqEq9E_-owGFlFWs7FJ-2AM4R_GewkRhppKBiIjKe9uL1NKLR8e7i5Emcz0byBOxBiAJTT6Y7lU4iYo5PljLTTbhXWhZ3BRQz5W1UCpRQAyo0ePIpx2x6iXwC9pyV6yfdfJjU_Ttd45eUe8-H6WW0Q/s1600/Design%20sem%20nome%20(4).jpg" alt="Lyo Tavares & Da'Rosa">
+</div>
